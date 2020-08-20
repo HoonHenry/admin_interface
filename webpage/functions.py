@@ -1,5 +1,5 @@
 # info = {"id": 'asdf', "password": 'asdfasdf', "phone_number": "010-1234-1234", "email": "asdf@asdf.com"}
-
+import pandas as pd
 
 # get inputs from html form
 def get_userinfo(**kwargs):
@@ -8,17 +8,13 @@ def get_userinfo(**kwargs):
     return user
 
 
-# def get_userinfos(user):
-#     users = []
-#     user_id = infos['ID']
-#     for info in infos:
-#         user = get_userinfo(info)
-#         user_infos.append(user)
-#         print(f"A {user_id}'s information is stored")
-#
-#     print(user_infos)
-#     return user_infos
-
+def make_csv(user):
+    users = []
+    df = pd.read_csv('test.csv', index_col=0)
+    df = pd.DataFrame.from_dict(user, orient='index')
+    a = df.to_csv('test.csv')
+    print()
+    return users
 
 
 def show_infos():
