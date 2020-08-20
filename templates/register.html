@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>USER MANAGEMENT</title>
+    </head>
+    <body>
+      <h1>Register your personal information</h1>
+      <div class="container">
+        <form class="formset" action="/result" method="get">
+          <label>User ID: </label>
+          <input name="userid" type="text" placeholder="Enter the new user ID" required>
+          <label>Password: </label>
+          <input name="userpw" type="password" placeholder="Enter the password" required>
+          <label>User Name: </label>
+          <input name="username" type="text" placeholder="Enter your name" required>
+          <label>User Email: </label>
+          <input name="useremail" type="email" placeholder="Enter your email" required>
+          <label>User Phone Number: </label>
+          <input name="phonenum" type="text" placeholder="Enter your phone number" required>
+          <label>What is your clearance?: </label>
+          <select name="rank">What is your clearance?
+            <option value="admin">Admin</option>
+            <option value="staff">Staff</option>
+            <option value="visitor">Visitor</option>
+          </select>
+          <button>Submit</button>
+
+        </form>
+      </div>
+    </body>
+</html>
+

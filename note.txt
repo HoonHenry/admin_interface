@@ -1,0 +1,19 @@
+
+
+1. 기존 CSV 불러오기(dataframe 형태로) 
+2. 사전 -> 불로온 df에 append
+3. csv 저장
+
+
+1.df = pd.read_csv("data.csv", index_col=0)
+2. d = {
+    'a': (1, 101),
+    'b': (2, 202),
+    'c': (3, 303)
+}
+df = pd.DataFrame.from_dict(d, orient="index")
+3.df.to_csv("data.csv")
+
+
+
+df[df['ID'].str.contains(123)]
