@@ -13,12 +13,11 @@
         {% for user in users %}
             <td><input type="radio" name="checkbox" value="selected"></td>
             <td>{{user.id}}</td>
-            <td>{{user.pw}}</td>
+            <td>{{user.name}}</td>
             <td>{{user.email}}</td>
             <td>{{user.phone}}</td>
             <td>{{user.cl}}</td>
         {% endfor %}
     </tr>
-
 </table>
 {% endblock %}

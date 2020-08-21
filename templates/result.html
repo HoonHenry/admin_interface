@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Result</h1>
-<h3>{{username}} is saved</h3>
-<h3>You ID is {{userid}}</h3>
+<table style="width:100%">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PHONE NUMBER</th>
+        <th>CLEARANCE</th>
+    </tr>
+    <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.cl}}</td>
+    </tr>
+</table>
 {% endblock %}
